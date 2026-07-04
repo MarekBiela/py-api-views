@@ -25,7 +25,7 @@ urlpatterns = [
     path(
         "cinema_halls/<int:pk>/",
         CinemaHallViewSet.as_view(
-            actions={"get": "retrieve", "put": "update", "delete": "destroy"}
+            actions={"get": "retrieve", "put": "update", "delete": "destroy", "patch": "partial_update"}
         ),
         name="cinema_hall-detail"
     ),
